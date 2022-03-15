@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tuto/widgets/news_feed.dart';
+import 'package:tuto/widgets/user_avatar.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,10 +31,133 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+
+
   @override
   Widget build(BuildContext context) {
-    return (Scaffold(
-        body: Center(
+    return (
+      Scaffold(
+        body:  
+          GridView(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                crossAxisSpacing: 15.0,
+                mainAxisSpacing: 15.0,
+              ),
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+                Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+              
+            ],
+          )
+        )
+    
+    );
+  }
+}
+
+
+/**
+ * ListView(
+          children: [
+              ListTile(
+                title: Text('create app'),
+                subtitle: Text('create a new flutter app'),
+                leading: CircleAvatar(),
+                trailing: Icon( Icons.accessible_forward ),
+              ),
+              ListTile(
+                title: Text('create app'),
+                subtitle: Text('create a new flutter app'),
+                leading: CircleAvatar(),
+                trailing: Icon( Icons.accessible_forward ),
+              ),
+              
+          ],
+        )
+ */
+
+/**
+ *               UserAvatar( photoURL: 'https://cdn4.iconfinder.com/data/icons/superheroes/512/batman-512.png', 
+              username: 'chourabi taher',
+              email: "tchourabi@gmail.com",
+              connected: true,
+               ), 
+               
+
+               UserAvatar( photoURL: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/batman-2024347-1703595.png', 
+              username: 'hedi',
+              email: "hedi@gmail.com",
+              connected: false,
+               ),
+ */
+
+/**
+ * Center(
       child: Container(
         height: 80,
         width: 80,
@@ -49,9 +174,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-    )));
-  }
-}
+    )
+ */
+
+
 
 /**
  * Container(
